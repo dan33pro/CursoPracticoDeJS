@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM básica</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .calculadora {
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.466);
+            display: grid;
+            grid-template-rows: 4fr 1fr 1fr;
+        }
+
+        .salida {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            border: 1px solid gray;
+            margin: 15px 0;
+        }
+
+        .salida div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .num3 {
+            margin: 5px;
+            border: 1px solid gray;
+        }
+        input {
+            text-align: center;
+        }
+
+        #btnSuma {
+            padding: 8px;
+            background-color: orange;
+            border: 1px solid black;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Manipulación del DOM - Eventos</h1>
+
+    <div class="calculadora">
+        <div class="salida"></div>
+        <div class="entrada">
+            <input type="text" id="num1" placeholder="Numeró 1">
+            <input type="text" id="num2" placeholder="Numeró 2">
+        </div>
+        <button id="btnSuma">Suma</button>
+        <script src="./main.js"></script>
+    </div>
+</body>
+
+</html>
